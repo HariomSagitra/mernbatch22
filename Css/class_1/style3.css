@@ -1,0 +1,39 @@
+
+.main{
+    background-color: lightgrey;
+    width: 300px;
+    height: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+input{
+    margin-left: 100px;
+    padding: 10px;
+    
+}
+
+#padding{
+    margin-left: 100px; ;
+    padding: 9px;
+    width: 150px;
+}
+
+#button{
+    margin-left: 130px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    
+}
+
+.range{
+    margin-top: 80px;
+}
+
+#swit{
+    margin-left: 90px;
+    margin-top: 5px;
+
+}
+
