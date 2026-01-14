@@ -13,3 +13,16 @@
 const pro = new Promise( (a,b) =>{
 });
 console.log(pro)
+
+const pro1 = new Promise((resoleve,reject) => {
+  resoleve("Promise fulfield");
+    reject("Prromise rejected");
+
+});
+console.log(pro1)
+
+const pro3 = new promise ((resolve,reject) => {
+        reject("promise reject");
+        resolve("Promise fulfiled")
+});
+pro3.then((op) => {console.log(op);}).catch()

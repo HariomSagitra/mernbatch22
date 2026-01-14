@@ -1,6 +1,6 @@
-const pro = new Promise( (a,b) => {
-});
-console.log(pro)
+// const pro = new Promise( (a,b) => {
+// });
+// console.log(pro)
 
 // const pro = new Promise( (resolve,reject) => {
 //     resolve("promise fulfield");
@@ -8,12 +8,11 @@ console.log(pro)
 // });
 // console.log(pro)
 
-// const pro = new Promise( (resolve,reject) => {
-//     reject("promise reject");
-//     resolve("promise fulfield");
-
-// });
-// pro.then( (op) => {console.log(op);}).catch( (err) => {console.log("promise has faild",err)})
+const pro = new Promise( (resolve,reject) => {
+    reject("promise reject");
+    resolve("promise fulfield");
+});
+pro.then( (op) => {console.log(op);}).catch( (err) => {console.log("promise has faild",err)})
 
 //we are doing API calling by fetch
 // const apifetch = fetch(`https://fakestoreapi.com/products/`)
