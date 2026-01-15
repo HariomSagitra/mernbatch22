@@ -72,14 +72,15 @@ NarakKaDwar("GET", "https://jsonplaceholder.typicode.com/posts", (data) => {
         (data) => {
           console.log("third level ", data);
 
-          NarakKaDwar("GET",`https://jsonplaceholder.typicode.com/posts/${data[0].id}`,(data) => {
-            console.log("four level",data);
-
-          })
+          NarakKaDwar(
+            "GET",
+            `https://jsonplaceholder.typicode.com/posts/${data[0].Id}`,
+            (data) => {
+              console.log("four level", data);
+            }
+          );
         }
       );
     }
   );
 });
-
-
