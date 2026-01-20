@@ -1,0 +1,42 @@
+// express ke sath kaam karte time
+//step-1 install express
+// npm i express
+
+//step-2 create the instance of express
+
+const express = require("express");  //Ye line Node.js me Express framework ko import (laane) ke liye likhi jaati hai.
+const app = express();               //Express framework ka ek application object banata hai,
+
+//step -3 defint the port it can in the same file or .env file
+
+const port = 3000
+//step -4 aap srever ko start karenge
+app.listen(port,()=>{
+    console.log('server is running')
+})
+
+// step -5 do connetction with database
+// we are using moongose
+//install moongose
+// npm i moongose
+// import karo moongose
+
+//connect karo db ko
+
+moongose.connect("mongodb://localhost:27017/class_2").then(()=>{
+    console.log("db connection done")
+}).catch((err)=>{
+    console.log("db connection failled")
+})
+
+//step-6 mount your paths
+
+app.get("/",(req,res)=>{
+    res.send("<h1>This is a heading</h1>")
+})
+
+
+
+// importent
+//route.get
+//app.get m diffrence kya hai
