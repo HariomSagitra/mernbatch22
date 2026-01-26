@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painter Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<!-- change class to "dark-theme" for dark mode -->
+
+<body class="light-theme">
+
+    <!-- HEADER -->
+    <header class="navbar">
+        <button class="btn home-btn">Home</button>
+
+        <input type="text" class="search-box" placeholder="search painter here">
+        <button class="btn">Search</button>
+
+        <button class="btn admin-btn">Go to Admin</button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- LEFT PANEL -->
+        <section class="panel painter-list">
+            <h3>All painter details if exist</h3>
+            <p class="empty-text">no painter exist now</p>
+
+            <div class="painter-row">
+                <span class="painter-name">PainterName</span>
+                <button class="btn small" id="view-all">View All Info</button>
+                <button class="btn small">Edit Painter Details</button>
+                <button class="btn small danger">Delete Painter</button>
+            </div>
+        </section>
+
+        <!-- RIGHT PANEL -->
+        <section class="panel add-painter">
+            <h3>Add Painter</h3>
+
+            <input type="text" placeholder="name of painter" id="in1">
+            <input type="text" placeholder="exp of painter" id="in2">
+            <input type="text" placeholder="painter category" id="in3">
+            <button class="btn primary" id="add">Add</button>
+            <p class="note">save btn if you edit in place of add</p>
+        </section>
+
+    </main>
+
+    <!-- VIEW INFO PANEL -->
+    <section class="panel view-info">
+        <h3>Painter Information</h3>
+        <input type="text" placeholder="name of painter">
+        <input type="text" placeholder="exp of painter">
+        <input type="text" placeholder="painter category">
+    </section>
+
+</body>
+
+</html>
