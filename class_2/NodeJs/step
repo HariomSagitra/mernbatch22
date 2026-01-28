@@ -10,6 +10,7 @@ const app = express();               //Express framework ka ek application objec
 //step -3 defint the port it can in the same file or .env file
 
 const port = 3000
+
 //step -4 aap srever ko start karenge
 app.listen(port,()=>{
     console.log('server is running')
@@ -40,3 +41,17 @@ app.get("/",(req,res)=>{
 // importent
 //route.get
 //app.get m diffrence kya hai
+
+//stare full othentication or state less autotication
+
+// types of storage localstorage multipal m acces ki ja sakti,sessionstorage ye multipal m nhi ki ja sakti hai, cookise storage smalll server se return data lene ka ak matr tarika
+
+//sha, mda
+
+//haing - non redebla format
+
+// forviden request 
+
+//middlware third party m chali jatai h or wo cheak kar tha hai
+
+// token ko dalne ke do tarike hai ak cookise or dusra database m save kar sakte hai or best tarika cookise wala hai
